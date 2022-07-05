@@ -4,7 +4,9 @@ st.write('hello,world!')
 
 file = st.file_uploader('上传')
 
-doc = aw.Document(file)
+loadOptions = aw.loading.TxtLoadOptions()
+loadOptions.detect_numbering_with_whitespaces = True 
+doc = aw.Document(file, loadOptions)
 
 text = doc.range.text
 
