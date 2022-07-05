@@ -9,5 +9,5 @@ doc = aw.Document(file)
 for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
     paragraph = paragraph.as_paragraph()
 
-    print(paragraph.list_format + str(para))
+    print(paragraph.list_format + str(paragraph))
 
