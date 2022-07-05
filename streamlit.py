@@ -8,6 +8,8 @@ doc = aw.Document(file)
 
 text = doc.range.text
 
+st.write(text)
+
 #for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
 #    paragraph = paragraph.as_paragraph()
 #
