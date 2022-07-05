@@ -6,6 +6,8 @@ file = st.file_uploader('上传')
 
 doc = aw.Document(file)
 
-for para in doc.Paragraphs:
+for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
+    paragraph = paragraph.as_paragraph()
+
     print(para.Range.ListFormat.ListString + str(para))
 
