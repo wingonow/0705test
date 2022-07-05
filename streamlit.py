@@ -9,5 +9,5 @@ doc = aw.Document(file)
 for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
     paragraph = paragraph.as_paragraph()
 
-    st.write(str(paragraph.list_format.list_level_number) + str(paragraph.text))
+    st.write(str(paragraph.list_format.list_level_number) + str(paragraph))
 
