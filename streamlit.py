@@ -16,12 +16,12 @@ doc=aw.Document(file)
 
 #st.write(text)
 
-a=doc.save('output.html')
+#a=doc.save('output.html')
 
-st.download_button(label='通过csv下载问卷脚本',
-                           data=a,
-                           file_name='问卷脚本.html',
-                           mime='html')
+#st.download_button(label='通过csv下载问卷脚本',
+#                           data=a,
+#                           file_name='问卷脚本.html',
+#                           mime='html')
 
 plaintext = aw.PlainTextDocument(file)
 
