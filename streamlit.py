@@ -17,7 +17,7 @@ doc=aw.Document()
 #st.write(text)
 
 #a=doc.save("output.html")
-a=doc.save(str)
+a=doc.to_string(aw.SaveFormat.TEXT))
 st.write(a)
 
 
