@@ -23,6 +23,7 @@ doc=aw.Document()
 paras = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True)
 for para in paras:
     para = para.as_paragraph()
+    st.write(doc.range.text)
     if para.list_format.is_list_item:
         st.write(f"This paragraph belongs to list ID# {para.list_format.list.list_id}, number style \"{para.list_format.list_level.number_style}\"")
         st.write(f"\t\"{para.get_text().strip()}\"")
