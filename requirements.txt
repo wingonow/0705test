@@ -1,3 +1,2 @@
 aspose-words==22.6.0
 streamlit==1.9.0
-python==3.7.0
