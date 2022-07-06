@@ -17,8 +17,8 @@ doc=aw.Document()
 #st.write(text)
 
 #a=doc.save("output.html")
-a=doc.to_string(aw.SaveFormat.TEXT)
-st.write(a)
+
+st.write(doc.to_string(aw.SaveFormat.TEXT))
 
 
 #for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
