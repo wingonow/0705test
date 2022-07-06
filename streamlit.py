@@ -12,9 +12,9 @@ doc=aw.Document(file)
 
 #doc.save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
 
-text = doc.range.text
+#text = doc.range.text
 
-st.write(text)
+st.write(doc.to_string(aw.SaveFormat.TEXT))
 
 #a=doc.save('output.html')
 
@@ -39,7 +39,7 @@ st.write(text)
 #        st.write(f"This paragraph belongs to list ID# {para.list_format.list.list_id}, number style \"{para.list_format.list_level.number_style}\"")
 #        st.write(f"\t\"{para.get_text().strip()}\"")
 
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
-    paragraph = paragraph.as_paragraph()
-    st.write(str(paragraph.list_format.list_level_number) + str(paragraph))
+#for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
+#    paragraph = paragraph.as_paragraph()
+#    st.write(str(paragraph.list_format.list_level_number) + str(paragraph))
 
