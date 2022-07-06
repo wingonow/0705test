@@ -8,7 +8,7 @@ file = st.file_uploader('上传')
 #loadOptions.detect_numbering_with_whitespaces = True 
 #doc = aw.Document(file, loadOptions)
 
-doc=aw.Document()
+doc=aw.Document(file)
 
 #doc.save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
 
@@ -16,9 +16,16 @@ doc=aw.Document()
 
 #st.write(text)
 
-doc.save(r'C:\Users\liwenjing\Downloads\survey Q\output.html')
+a=doc.save('output.html')
 
+st.download_button(label='通过csv下载问卷脚本',
+                           data=a,
+                           file_name='问卷脚本.html',
+                           mime='html')
 
+plaintext = aw.PlainTextDocument(file)
+
+st.write(plaintext.text.strip())
 
 
 
