@@ -19,7 +19,7 @@ doc=aw.Document()
 #a=doc.save("output.html")
 
 #st.write(doc.to_string(aw.SaveFormat.TEXT))
-
+st.write(type(paras))
 paras = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True)
 for para in paras:
     para = para.as_paragraph()
