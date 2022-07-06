@@ -16,8 +16,8 @@ doc=aw.Document()
 
 #st.write(text)
 
-a=doc.save("output.html")
-
+#a=doc.save("output.html")
+a=doc.save(str)
 st.write(a)
 
 
