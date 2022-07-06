@@ -10,7 +10,7 @@ file = st.file_uploader('上传')
 
 doc=aw.Document()
 
-doc.Save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
+doc.save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
 
 #text = doc.range.text
 
