@@ -25,7 +25,7 @@ for paragraph in paras:
         label = paragraph.list_label
         # This gets the position of the paragraph in the current level of the list. If we have a list with multiple levels,
         # this will tell us what position it is on that level.
-        print(f"\tNumerical Id: {label.label_
+        print(f"\tNumerical Id: {label.label__value}")
         # Combine them together to include the list label with the text in the output.
         print(f"\tList label combined with text: {label.label_string} {paragraph_text}")
 
