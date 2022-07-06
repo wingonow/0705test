@@ -10,12 +10,15 @@ file = st.file_uploader('上传')
 
 doc=aw.Document()
 
-doc.save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
+#doc.save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
 
 #text = doc.range.text
 
 #st.write(text)
 
+a=doc.save("output.txt")
+
+st.download_button(label='txt',data=a,file_name='a.txt',mime='text')
 
 
 #for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
