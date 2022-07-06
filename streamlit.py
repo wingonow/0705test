@@ -15,8 +15,10 @@ doc=aw.Document()
 #text = doc.range.text
 
 #st.write(text)
-st.download_button(label='通过csv下载问卷脚本',data=doc.save("output.html"),file_name='问卷脚本.html',mime='html')
-a=doc.save("output.html")
+
+doc.save(r'C:\Users\liwenjing\Downloads\survey Q\output.html')
+
+
 
 
 
