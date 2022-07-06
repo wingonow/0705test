@@ -4,13 +4,19 @@ st.write('hello,world!')
 
 file = st.file_uploader('上传')
 
-loadOptions = aw.loading.TxtLoadOptions()
-loadOptions.detect_numbering_with_whitespaces = True 
-doc = aw.Document(file, loadOptions)
+#loadOptions = aw.loading.TxtLoadOptions()
+#loadOptions.detect_numbering_with_whitespaces = True 
+#doc = aw.Document(file, loadOptions)
 
-text = doc.range.text
+doc=aw.Document()
 
-st.write(text)
+doc.Save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
+
+#text = doc.range.text
+
+#st.write(text)
+
+
 
 #for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
 #    paragraph = paragraph.as_paragraph()
