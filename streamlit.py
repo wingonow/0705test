@@ -16,9 +16,9 @@ doc=aw.Document()
 
 #st.write(text)
 
-a=doc.save("output.txt")
+a=doc.save("output.html")
 
-st.download_button(label='txt',data=a,file_name='a.txt',mime='text')
+st.download_button(label='txt',data=a,file_name='a.html',mime='text')
 
 
 #for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True) :
