@@ -24,7 +24,7 @@ doc=aw.Document(file)
 
 
 with tempfile.TemporaryFile() as fp:  # 创建临时文件，模式默认为w+b，可以读取或写入二进制数据
-    fp.write(doc.save("Output.txt"))  # 写入数据
+    fp.write(doc.save("Output.txt").getbuffer())  # 写入数据
     st.download_button(label='下载题干',data=fp,file_name='题干.txt',mime='text/csv')
 
 
