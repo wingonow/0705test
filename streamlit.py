@@ -12,8 +12,10 @@ file = st.file_uploader('上传')
 doc=aw.Document(file)
 
 for list in doc.lists:
-    st.write(list.TEXT)
+    st.write(list)
 
+st.write(help(aspose.words))
+    
 #doc.update_list_labels()
 
 #paras = [node.as_paragraph() for node in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True)]
