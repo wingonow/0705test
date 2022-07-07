@@ -25,7 +25,7 @@ paras = [node.as_paragraph() for node in doc.get_child_nodes(aw.NodeType.PARAGRA
 ## which start at three and ends at six.
 for paragraph in paras:
     label = paragraph.list_label
-    st.write(label.label_level)
+    st.write(label.getvalue())
 #    if paragraph.list_format.is_list_item:
 #        print(f"List item paragraph #{paras.index(paragraph)}")
 #        # This is the text we get when getting when we output this node to text format.
