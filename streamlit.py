@@ -16,10 +16,6 @@ file = st.file_uploader('上传')
 
 doc=aw.Document(file)
 
-#for list in doc.lists:
-#    st.write(list)
-
-
 doc.update_list_labels() # 必须要加上, 否则label_string为空
 paras = [node.as_paragraph() for node in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True)]
 ## Find if we have the paragraph list. In our document, our list uses plain Arabic numbers,
