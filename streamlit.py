@@ -12,7 +12,7 @@ file = st.file_uploader('上传')
 doc=aw.Document(file)
 
 for list in doc.lists:
-    st.write(list)
+    st.write(list.TEXT)
 
 #doc.update_list_labels()
 
