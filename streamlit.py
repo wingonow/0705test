@@ -14,7 +14,7 @@ doc=aw.Document(file)
 for list in doc.lists:
     st.write(list)
 
-st.write(help(aspose.words))
+st.write(help(aspose-words))
     
 #doc.update_list_labels()
 
