@@ -26,7 +26,8 @@ paras = [node.as_paragraph() for node in doc.get_child_nodes(aw.NodeType.PARAGRA
 for paragraph in paras:
     if paragraph.list_format.is_list_item:
         st.write('text',paragraph.to_string(aw.SaveFormat.TEXT))
-        st.write('labelstring',paragraph.list_label.get_label_string())
+        #st.write('labelstring',paragraph.list_label.label_string)
+        st.write('labelstring',paragraph.list_label.label_string())
 #    if paragraph.list_format.is_list_item:
 #        print(f"List item paragraph #{paras.index(paragraph)}")
 #        # This is the text we get when getting when we output this node to text format.
