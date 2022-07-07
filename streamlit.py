@@ -24,7 +24,7 @@ paras = [node.as_paragraph() for node in doc.get_child_nodes(aw.NodeType.PARAGRA
 ## Find if we have the paragraph list. In our document, our list uses plain Arabic numbers,
 ## which start at three and ends at six.
 for paragraph in paras:    
-    st.write('text',paragraph.to_string)
+    st.write('text',paragraph.to_string(aw.SaveFormat.TEXT))
     st.write('labelstring',paragraph.list_label.label_string)
 #    if paragraph.list_format.is_list_item:
 #        print(f"List item paragraph #{paras.index(paragraph)}")
