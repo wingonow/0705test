@@ -37,7 +37,7 @@ for paragraph in paras:
 #        # this will tell us what position it is on that level.
 #        print(f"\tNumerical Id: {label.label_value}")
 #        # Combine them together to include the list label with the text in the output.
-#        print(f"\tList label combined with text: {label.label_string} {paragraph_text}")
+#        print(f"\tList label combined with text: {label.LabelString} {paragraph_text}")
 
 
 #doc.save(r'C:\Users\liwenjing\Downloads\survey Q\new.html', SaveFormat.Html);
