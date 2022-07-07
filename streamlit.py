@@ -11,8 +11,8 @@ file = st.file_uploader('上传')
 
 doc=aw.Document(file)
 
-for src_list in src_doc.lists:
-    st.write(src_list)
+for list in doc.lists:
+    st.write(list)
 
 #doc.update_list_labels()
 
