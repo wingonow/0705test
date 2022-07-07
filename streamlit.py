@@ -26,7 +26,7 @@ doc=aw.Document(file)
 #另存为
 doc = aw.Document("Input.docx")
 a=doc.save("Output.txt")
-st..download_button(label='下载题干',data=a,file_name='题干.txt',mime='text/csv')
+st.download_button(label='下载题干',data=a,file_name='题干.txt',mime='text/csv')
 
 
 doc.update_list_labels() # 必须要加上, 否则label_string为空
